@@ -1,0 +1,29 @@
+PODS:
+  - DocuSign (2.3.1)
+  - docusign_sdk (0.0.1):
+    - DocuSign
+    - Flutter
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - docusign_sdk (from `.symlinks/plugins/docusign_sdk/ios`)
+  - Flutter (from `Flutter`)
+
+SPEC REPOS:
+  trunk:
+    - DocuSign
+
+EXTERNAL SOURCES:
+  docusign_sdk:
+    :path: ".symlinks/plugins/docusign_sdk/ios"
+  Flutter:
+    :path: Flutter
+
+SPEC CHECKSUMS:
+  DocuSign: e17908042123cf9a3be91b7a98ffc1f99eb47fc1
+  docusign_sdk: 32a1ea768ec090ce3e4d3b1ebe1f651daad91068
+  Flutter: 0e3d915762c693b495b44d77113d4970485de6ec
+
+PODFILE CHECKSUM: 49ec7d4076524b7e225c38b98147173651ac4b9d
+
+COCOAPODS: 1.9.2
