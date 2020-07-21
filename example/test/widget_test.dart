@@ -15,6 +15,17 @@ void main() {
     // Build our app and trigger a frame.
     await tester.pumpWidget(MyApp());
 
+    var a;
+    if (false) {
+      a = 1;
+    } else {
+      a = '1';
+    }
+
+    a = 2;
+    print(a);
+    print(a.runtimeType);
+
     // Verify that platform version is retrieved.
     expect(
       find.byWidgetPredicate(
