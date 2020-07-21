@@ -1,9 +1,9 @@
 name: docusign_sdk
 description: Flutter plugin for DocuSign sdk.
-version: 0.0.1
-author:
-homepage:
-
+version: 0.0.1-beta1
+author: myamo lane <myamolane@outlook.com>
+homepage: https://github.com/myamolane/docusign-sdk
+publish_to: https://pub.dev
 environment:
   sdk: ">=2.1.0 <3.0.0"
 
