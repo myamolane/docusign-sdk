@@ -18,6 +18,10 @@ rootProject.allprojects {
     repositories {
         google()
         jcenter()
+
+        maven {
+            url  "https://dl.bintray.com/dsdevcenter/maven"
+        }
     }
 }
 
@@ -31,8 +35,9 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 19
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        multiDexEnabled = true
     }
     lintOptions {
         disable 'InvalidPackage'
@@ -41,4 +46,6 @@ android {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'com.docusign:androidsdk:1.1.9'
+    implementation "androidx.multidex:multidex:2.0.1"
 }

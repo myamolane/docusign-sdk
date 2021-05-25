@@ -96,7 +96,8 @@ class _MyAppState extends State<MyApp> {
           RaisedButton(
             child: Text('remove cache by id'),
             onPressed: () async {
-              await DocusignSdk.removeCachedEnvelopeWithId("9FED9521-0ECF-48C7-9863-923A3981E412");
+              await DocusignSdk.removeCachedEnvelopeWithId(
+                  "9FED9521-0ECF-48C7-9863-923A3981E412");
               print('removed');
             },
           ),
@@ -113,9 +114,8 @@ class _MyAppState extends State<MyApp> {
 
               dynamic r = await DocusignSdk.renderWithTemplateId(templateId,
                   signingMode: DocuSignSigningMode.offline,
-                  envelopeDefaults: EnvelopeDefaults(
-                      recipientDefaults: [recip]
-                  ));
+                  envelopeDefaults:
+                      EnvelopeDefaults(recipientDefaults: [recip]));
               print('singed');
               print(r);
             },
